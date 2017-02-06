@@ -11,12 +11,24 @@
    the sum of n and n+1 and n+2 is y
  */
 import java.util.Scanner;
+import java.io.InputStream;
 public class Arithmetic {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { //trying to get exception handling for arthimetic.
 		Scanner scan = new Scanner(System.in);
-		System.out.print("Enter an integer: ");
-		double n = scan.nextInt();
+		while(true)
+		{
+			System.out.print("Enter an integer: ");
+		}
+		try 
+		{
+			double n = scan.nextDouble();
+			return n;
+		}
+		catch (java.util.InputMistmatchException e)
+		{
+			scan.nextLine();
+		}
 		double half, squared, recip, tenth, tenthsq, sum,opp, twice, minus;
 		
 		opp = -n;
@@ -35,7 +47,8 @@ public class Arithmetic {
 		System.out.println("one-tenth of "+n+ " is "+tenth+" and "+ tenth+ " squared is "+ tenthsq);
 		System.out.println("The sum of "+n+ " and "+ (n+1) +" and "+(n+2) +" is "+ sum);
 		
-		//testing 
+		//I want to now practice control versioning
+		
 	}
 
 }
