@@ -16,17 +16,25 @@ public class Arithmetic {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.print("Enter an integer: ");
-		int n = scan.nextInt();
-		int opp, twice, minus;
-		double half, squared, recip, tenth, tenthsq, sum;
+		double n = scan.nextInt();
+		double half, squared, recip, tenth, tenthsq, sum,opp, twice, minus;
 		
 		opp = -n;
 		twice = n *2;
 		half = n/2; 
 		squared = Math.pow(n, 2);
 		recip = 1/n;
-		tenth = n *(1/10);
+		tenth = n *.1;
 		tenthsq = Math.pow(tenth, 2);
+		sum = n + (n+1) + (n+2);
+		
+		System.out.println("The opposite of "+n+" is "+ opp);
+		System.out.println(n+ "dobuled is "+twice);
+		System.out.println("one-half of "+n+" is "+ half);
+		System.out.println("The reciprocal of "+n+" is "+recip);
+		System.out.println("one-tenth of "+n+ " is "+tenth+" and "+ tenth+ " squared is "+ tenthsq);
+		System.out.println("The sum of "+n+ " and "+ (n+1) +" and "+(n+2) +" is "+ sum);
+		
 		//testing 
 	}
 
