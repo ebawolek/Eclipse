@@ -9,6 +9,7 @@
    one-tenth of n is tenth and tenth squared is tenthsq
    n minus the last digit of n is y
    the sum of n and n+1 and n+2 is y
+   This program showcases understanding of Arithmetic Operators, While Loops, and Try-        Catch error handling.
  */
 
 import java.util.InputMismatchException;
