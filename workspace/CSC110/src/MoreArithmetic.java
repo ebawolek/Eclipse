@@ -55,7 +55,16 @@ ABSI: 0.4693939190585873
 
 This program showcases understanding of Math.pow(); integer division & modulus operator; and equations
  */
-
+import java.util.Scanner;
 public class MoreArithmetic {
+   public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        int date, year, month, day, yearrem;
+        System.out.println("Please input a date in YYYYMMDD format");
+        date = scan.nextInt();
+        year = date / 10000; //divide the date by 10000 to obtain year
+        //System.out.println(year);
+        yearrem
+    }
 
 }
